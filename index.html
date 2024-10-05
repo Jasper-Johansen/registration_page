@@ -15,20 +15,20 @@
         <!-- Name, Age, Email -->
         <fieldset id="names">
           <label id="name-label">Name
-            <input id="name" type="text" placeholder="Enter your name" required>
+            <input id="name" name="name" type="text" placeholder="Enter your name" required>
           </label>
           <label id="number-label">Age (optional)
-            <input id="number" type="number" min="10" max="115" placeholder="Age">
+            <input id="number" name="age" type="number" min="10" max="115" placeholder="Age">
           </label>
           <label id="email-label">Email
-            <input id="email" type="email" placeholder="Enter your email" required>
+            <input id="email" name="email" type="email" placeholder="Enter your email" required>
           </label>
         </fieldset>
 
         <!-- Role -->
         <fieldset id="role">
           <label class="option">Which option best describes your current role?
-            <select id="dropdown" name="referrer">
+            <select id="dropdown" name="role">
               <option value="">Select current role</option>
               <option value="1">Student</option>
               <option value="2">Full Time Job</option>
@@ -51,7 +51,7 @@
         <!-- Favorite Feature -->
         <fieldset id="feature">
           <label>What is your favorite feature of freeCodeCamp?
-            <select>
+            <select name="feature">
               <option value="">Select an option</option>
               <option value="1">Challenges</option>
               <option value="2">Projects</option>
@@ -64,23 +64,23 @@
         <!-- Comments Section -->
         <fieldset id="comments">
           <label>What would you like to see improved? (Check all that apply)</label>
-          <label><input type="checkbox" value="front"> Front-end Projects</label>
-          <label><input type="checkbox" value="back"> Back-end Projects</label>
-          <label><input type="checkbox" value="data"> Data visualizations</label>
-          <label><input type="checkbox" value="chall"> Challenges</label>
-          <label><input type="checkbox" value="open"> Open Source Community</label>
-          <label><input type="checkbox" value="glitter"> Gitter help rooms</label>
-          <label><input type="checkbox" value="videos"> Videos</label>
-          <label><input type="checkbox" value="meet"> City Meetups</label>
-          <label><input type="checkbox" value="wiki"> Wiki</label>
-          <label><input type="checkbox" value="forums"> Forums</label>
-          <label><input type="checkbox" value="additional"> Additional courses</label>
+          <label><input type="checkbox" name="improvements[]" value="front-end"> Front-end Projects</label>
+          <label><input type="checkbox" name="improvements[]" value="back-end"> Back-end Projects</label>
+          <label><input type="checkbox" name="improvements[]" value="data"> Data visualizations</label>
+          <label><input type="checkbox" name="improvements[]" value="challenges"> Challenges</label>
+          <label><input type="checkbox" name="improvements[]" value="open-source"> Open Source Community</label>
+          <label><input type="checkbox" name="improvements[]" value="gitter"> Gitter help rooms</label>
+          <label><input type="checkbox" name="improvements[]" value="videos"> Videos</label>
+          <label><input type="checkbox" name="improvements[]" value="meetups"> City Meetups</label>
+          <label><input type="checkbox" name="improvements[]" value="wiki"> Wiki</label>
+          <label><input type="checkbox" name="improvements[]" value="forums"> Forums</label>
+          <label><input type="checkbox" name="improvements[]" value="additional-courses"> Additional courses</label>
         </fieldset>
 
         <!-- Suggestion Box -->
         <fieldset>
           <label>Any comments or suggestions?
-            <textarea placeholder="Enter your comment here"></textarea>
+            <textarea name="comments" placeholder="Enter your comment here"></textarea>
           </label>
         </fieldset>
 
